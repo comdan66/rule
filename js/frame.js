@@ -35,11 +35,8 @@ $(function () {
   })))));
 
   $('pre').each (function () {
-    var $this = $(this).parent ();
-    var html = $this.html ();
-    var length = html.indexOf ('<pre') + 1;
-    var pattern = new RegExp ("(\n {" + length + "})|(^ {" + length + "})", 'g');
-    $(this).html ($(this).html ().replace (pattern, '\n').replace (/^\n/g, ''));
+    var length = $(this).parent ().html ().indexOf ('<pre') + 1;
+    $(this).html ($(this).html ().replace (new RegExp ("(\n {" + length + "})|(^ {" + length + "})", 'g'), '\n').replace (/^\n/g, '').replace (/ *$/g, ''));
   });
 
   $loading.fadeOut (function () {
