@@ -2,6 +2,21 @@
  * @author      OA Wu <comdan66@gmail.com>
  * @copyright   Copyright (c) 2015 OA Wu Design
  */
+function str_repeat (input, multiplier) {
+  var y = '';
+  while (true) {
+    if (multiplier & 1) {
+      y += input;
+    }
+    multiplier >>= 1;
+    if (multiplier) {
+      input += input;
+    } else {
+      break;
+    }
+  }
+  return y;
+}
 
 $(function () {
   var now = document.URL.replace (/^.*[\\\/]/, '');
@@ -15,8 +30,22 @@ $(function () {
     {name: '關鍵字', file: 'keyword.html'}
   ];
 
-  $('body').prepend ($('<div />').attr ('id', 'header').append ($('<div />').append (mainMenu.map (function (t) {
+  var $loading = $('<div />').attr ('id', 'loading').append ($('<div />')).appendTo ($('body').prepend ($('<div />').attr ('id', 'header').append ($('<div />').append (mainMenu.map (function (t) {
     return $('<a />').addClass (now == t.file ? 'active' : null).attr ('href', t.file).append (t.name);
-  }))));
+  })))));
 
+  $('pre').each (function () {
+    var $this = $(this).parent ();
+    var html = $this.html ();
+    var length = html.indexOf ('<pre') + 1;
+    var pattern = new RegExp ("(\n {" + length + "})|(^ {" + length + "})", 'g');
+    $(this).html ($(this).html ().replace (pattern, '\n').replace (/^\n/g, ''));
+  });
+
+  $loading.fadeOut (function () {
+    $(this).hide (function () {
+      $(this).remove ();
+      console.error ('ss');
+    });
+  });
 });

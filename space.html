@@ -33,16 +33,16 @@
         <h2>類別(class)</h2>
         <div class='s'>
           <div class='l'>
-<pre>
-class Main extends Site_controller{
-}
-</pre>
+            <pre>
+              class Main extends Site_controller{
+              }
+            </pre>
           </div>
           <div class='r' data-msg='左大括號前需一個空格'>
-<pre>
-class Main extends Site_controller<sp> </sp>{
-}
-</pre>
+            <pre>
+              class Main extends Site_controller<sp> </sp>{
+              }
+            </pre>
           </div>
         </div>
       </div>
@@ -51,54 +51,54 @@ class Main extends Site_controller<sp> </sp>{
         <h2>函式(function)</h2>
         <div class='s'>
           <div class='l'>
-<pre>
-public function index(){
-  $this->load_view(null);
-}
-</pre>
+            <pre>
+              public function index(){
+                $this->load_view(null);
+              }
+            </pre>
           </div>
           <div class='r' data-msg='左括號前、右括號後 皆需一個空格'>
-<pre>
-public function index<sp> </sp>()<sp> </sp>{
-  $this->load_view<sp> </sp>(null);
-}
-</pre>
+            <pre>
+              public function index<sp> </sp>()<sp> </sp>{
+                $this->load_view<sp> </sp>(null);
+              }
+            </pre>
           </div>
         </div>
         <div class='s'>
           <div class='l'>
-<pre>
-array_map(function($item){
-  return $item;
-},$array);
-</pre>
+            <pre>
+              array_map(function($item){
+                return $item;
+              },$array);
+            </pre>
           </div>
           <div class='r' data-msg='左括號、逗號後 皆需一個空格'>
-<pre>
-array_map<sp> </sp>(function<sp> </sp>($item)<sp> </sp>{
-  return $item;
-},<sp> </sp>$array);
-</pre>
+            <pre>
+              array_map<sp> </sp>(function<sp> </sp>($item)<sp> </sp>{
+                return $item;
+              },<sp> </sp>$array);
+            </pre>
           </div>
         </div>
         <div class='s'>
           <div class='l'>
-<pre>
-function func ($a,$b) {
-  return $a + $b;
-}
+            <pre>
+              function func ($a,$b) {
+                return $a + $b;
+              }
 
-echo func (1,2);
-</pre>
+              echo func (1,2);
+            </pre>
           </div>
           <div class='r' data-msg='參數逗號後需一個空格'>
-<pre>
-function func ($a,<sp> </sp>$b) {
-  return $a + $b;
-}
+            <pre>
+              function func ($a,<sp> </sp>$b) {
+                return $a + $b;
+              }
 
-echo func (1, 2);
-</pre>
+              echo func (1, 2);
+            </pre>
           </div>
         </div>
       </div>
@@ -107,14 +107,14 @@ echo func (1, 2);
         <h2>變數(variable)</h2>
         <div class='s'>
           <div class='l'>
-<pre>
-$a='哈羅';
-</pre>
+            <pre>
+              $a='哈羅';
+            </pre>
           </div>
           <div class='r' data-msg='等號前後需一個空格'>
-<pre>
-$a<sp> </sp>=<sp> </sp>'哈囉！';
-</pre>
+            <pre>
+              $a<sp> </sp>=<sp> </sp>'哈囉！';
+            </pre>
           </div>
         </div>
       </div>
@@ -123,18 +123,18 @@ $a<sp> </sp>=<sp> </sp>'哈囉！';
         <h2>運算子(operator)</h2>
         <div class='s'>
           <div class='l'>
-<pre>
-$a==$b
-$a<=$b
-$a===$b
-</pre>
+            <pre>
+              $a==$b
+              $a<=$b
+              $a===$b
+            </pre>
           </div>
           <div class='r' data-msg='運算子前後需一個空格'>
-<pre>
-$a<sp> </sp>==<sp> </sp>$b
-$a<sp> </sp><=<sp> </sp>$b
-$a<sp> </sp>===<sp> </sp>$b
-</pre>
+            <pre>
+              $a<sp> </sp>==<sp> </sp>$b
+              $a<sp> </sp><=<sp> </sp>$b
+              $a<sp> </sp>===<sp> </sp>$b
+            </pre>
           </div>
         </div>
       </div>
@@ -143,46 +143,46 @@ $a<sp> </sp>===<sp> </sp>$b
         <h2>關鍵字(if else switch..)</h2>
         <div class='s'>
           <div class='l'>
-<pre>
-if($a==$b){
+            <pre>
+              if($a==$b){
 
-}else{
+              }else{
 
-}
-</pre>
+              }
+            </pre>
           </div>
           <div class='r' data-msg='左小括號前、運算子前後、右小括號後需一個空格'>
-<pre>
-if<sp> </sp>($a<sp> </sp>==<sp> </sp>$b)<sp> </sp>{
+            <pre>
+              if<sp> </sp>($a<sp> </sp>==<sp> </sp>$b)<sp> </sp>{
 
-}<sp> </sp>else<sp> </sp>{
+              }<sp> </sp>else<sp> </sp>{
 
-}
-</pre>
+              }
+            </pre>
           </div>
         </div>
         <div class='s'>
           <div class='l'>
-<pre>
-switch($variable){
-  case'value':
-    break;
-  
-  default:
-    break;
-}
-</pre>
+            <pre>
+              switch($variable){
+                case'value':
+                  break;
+                
+                default:
+                  break;
+              }
+            </pre>
           </div>
           <div class='r' data-msg='左小括號前、右小括號後需一個空格'>
-<pre>
-switch<sp> </sp>($variable)<sp> </sp>{
-  case<sp> </sp>'value':
-    break;
-  
-  default:
-    break;
-}
-</pre>
+            <pre>
+              switch<sp> </sp>($variable)<sp> </sp>{
+                case<sp> </sp>'value':
+                  break;
+                
+                default:
+                  break;
+              }
+            </pre>
           </div>
         </div>
       </div>
@@ -191,32 +191,32 @@ switch<sp> </sp>($variable)<sp> </sp>{
         <h2>回圈(loop)</h2>
         <div class='s'>
           <div class='l'>
-<pre>
-while($a<=10){
+            <pre>
+              while($a<=10){
 
-}
-</pre>
+              }
+            </pre>
           </div>
           <div class='r' data-msg='左小括號前、運算子前後、右小括號後需一個空格'>
-<pre>
-while<sp> </sp>($a<sp> </sp><=<sp> </sp>10)<sp> </sp>{
+            <pre>
+              while<sp> </sp>($a<sp> </sp><=<sp> </sp>10)<sp> </sp>{
 
-}
-</pre>
+              }
+            </pre>
           </div>
         </div>
         <div class='s'>
           <div class='l'>
-<pre>
-for ($i = 0;$i < 10;$i++) {
-}
-</pre>
+            <pre>
+              for ($i = 0;$i < 10;$i++) {
+              }
+            </pre>
           </div>
           <div class='r' data-msg='分號後需一個空格'>
-<pre>
-for ($i = 0;<sp> </sp>$i < 10;<sp> </sp>$i++) {
-}
-</pre>
+            <pre>
+              for ($i = 0;<sp> </sp>$i < 10;<sp> </sp>$i++) {
+              }
+            </pre>
           </div>
         </div>
       </div>
@@ -225,35 +225,36 @@ for ($i = 0;<sp> </sp>$i < 10;<sp> </sp>$i++) {
         <h2>運算式(expression)</h2>
         <div class='s'>
           <div class='l'>
-<pre>
-$a = 'Hello';
-$b = 'World';
-echo $a.b;
-</pre>
+            <pre>
+              $a = 'Hello';
+              $b = 'World';
+              echo $a.b;
+            </pre>
           </div>
           <div class='r' data-msg='運算子前後需一個空格'>
-<pre>
-$a = 'Hello';
-$b = 'World';
-echo $a<sp> </sp>.<sp> </sp>b;
-</pre>
+            <pre>
+              $a = 'Hello';
+              $b = 'World';
+              echo $a<sp> </sp>.<sp> </sp>b;
+            </pre>
           </div>
         </div>
         <div class='s'>
           <div class='l'>
-<pre>
-$a = 1+2;
-echo $a;
-</pre>
+            <pre>
+              $a = 1+2;
+              echo $a;
+            </pre>
           </div>
           <div class='r' data-msg='運算子前後需一個空格'>
-<pre>
-$a = 1<sp> </sp>+<sp> </sp>2;
-echo $a;
-</pre>
+            <pre>
+              $a = 1<sp> </sp>+<sp> </sp>2;
+              echo $a;
+            </pre>
           </div>
         </div>
       </div>
     </div>
+    
   </body>
 </html>
