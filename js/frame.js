@@ -16,7 +16,8 @@ $(function () {
     {name: '換行縮排', file: 'tab.html'},
     {name: '命名', file: 'naming.html'},
     {name: '註解', file: 'comment.html'},
-    {name: '關鍵字', file: 'keyword.html'}
+    {name: '關鍵字', file: 'keyword.html'},
+    {name: '其他', file: 'other.html'}
   ];
 
   var $loading = $('<div />').attr ('id', 'loading').append ($('<div />')).appendTo ($('body').append ($('<div />').attr ('id', 'footer').append (footer.map (function (t) {

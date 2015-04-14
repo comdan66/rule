@@ -26,14 +26,14 @@
       <div class='b'>
         <h2>一般狀況</h2>
         <div class='s'>
-          <div class='l'>
+          <div class='l' data-msg='錯誤' >
             <pre>
               $a = "Hello";
               $b = "World";
               echo $a . $b;
             </pre>
           </div>
-          <div class='r' data-msg='字串表示需用單引號'>
+          <div class='r' data-msg='正確，字串表示需用單引號'>
             <pre>
               $str1 = <g>'</g>Hello<g>'</g>;
               $str2 = <g>'</g>World<g>'</g>;
@@ -42,13 +42,13 @@
           </div>
         </div>
         <div class='s'>
-          <div class='l'>
+          <div class='l' data-msg='錯誤' >
             <pre>
               $str = "Hello";
               echo "$str World";
             </pre>
           </div>
-          <div class='r' data-msg='儘量避免使用雙引號'>
+          <div class='r' data-msg='正確，儘量避免使用雙引號'>
             <pre>
               $str = <g>'</g>Hello<g>'</g>;
               echo $str . <g>'</g> World<g>'</g>;
@@ -56,13 +56,13 @@
           </div>
         </div>
         <div class='s'>
-          <div class='l'>
+          <div class='l' data-msg='錯誤' >
             <pre>
               $str = 'Hi I\'m OA.';
               echo $str;
             </pre>
           </div>
-          <div class='r' data-msg='字串內有使用到單引號需改用雙引號'>
+          <div class='r' data-msg='正確，字串內有使用到單引號需改用雙引號'>
             <pre>
               $str = <g>"</g>Hi I'm OA.<g>"</g>;
               echo $str;
